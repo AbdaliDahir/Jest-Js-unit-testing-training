@@ -1,11 +1,11 @@
 const SumNumber = require('../SumNumber');
 
-describe("check for sum Numbers", () => {
-  test('should return 0 if there is o argm', () => {
+describe.only("check for sum Numbers", () => {
+  test.only('should return 0 if there is o argm', () => {
     expect(SumNumber()).toBe(0);
   })
   
-  test('should return', () => {
+  test.skip('should return', () => {
     expect(SumNumber(10,20)).toBe(30);
   })
   
